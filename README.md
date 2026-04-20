@@ -8,7 +8,6 @@
 This project is a modern, fully responsive **Glassmorphism** style Login Page, designed according to the latest 2026 web UI/UX trends.
 
 ## 🔗 Live Demo
-*(You can add your GitHub Pages link here once deployed)*
 > **[Click here for Live Demo](https://coderking-dev.github.io/Login-Ghost/)**
 
 ## 🚀 Key Features
