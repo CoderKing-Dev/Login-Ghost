@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-     <style>
-        body, html { background-color: #000 !important; }
-    </style>
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <div class="Login-container">
 
-        <h1 class="logo-text">LOGIN</h1> <!-- Səhifənin ən başındakı əsas logo yazımız -->
+        <h1 class="logo-text">LOGIN</h1> 
 
 
     <div class="input-container">
@@ -59,7 +55,6 @@
     const password = document.querySelector('#pass');
 
     toggleEye.addEventListener('click', function () {
-        // Şifrənin tipini yoxlayırıq (password-dur yoxsa text?)
         const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
         password.setAttribute('type', type);
         
