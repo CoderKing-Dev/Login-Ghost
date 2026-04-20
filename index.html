@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="Login-container">
+
+        <h1 class="logo-text">LOGIN</h1> <!-- Səhifənin ən başındakı əsas logo yazımız -->
+
+
+    <div class="input-container">
+     <input type="text" name="" id="user" required>
+     <label for="user">Username</label>
+     <span class="underline"></span>
+     <i class="fas fa-user icon"></i>
+    </div>
+    <div class="input-container">
+     <input type="text" name="" id="pass" required>
+     <label for="pass">Password</label>
+     <span class="underline"></span>
+     <i class="fas fa-eye icon" id="toggleEye"></i>
+    </div>
+
+    <div class="remember-forgot">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+        <a href="#">Forgot Password?</a>
+
+    </div>
+
+         <button type="submit" class="btn">Login</button>
+
+   <div class="Links">
+    <p>Don't have an account?</p>
+    <a href="#">Sign Up</a>
+   </div>
+
+   <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-google"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+   </div>
+</div>
+</body>
+<script>
+    const toggleEye = document.querySelector('#toggleEye');
+    const password = document.querySelector('#pass');
+
+    toggleEye.addEventListener('click', function () {
+        // Şifrənin tipini yoxlayırıq (password-dur yoxsa text?)
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        
+        // Göz ikonunun şəklini dəyişirik (açıq yoxsa bağlı?)
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+
+</html>
